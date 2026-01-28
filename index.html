@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+    <section>
+        <form action="" onsubmit="event.preventDefault()" onclick="buscarPokemon()">
+            <fieldset>
+                <legend>Pesquise seu pokemon </legend>
+
+                <input type="text" name="search" id="search" placeholder="ex. pikachu">
+                <button type="submit"  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </fieldset>
+            
+        </form>
+    </section>
+    <main>
+        <div id="pokemon">
+            <p><img id="img" src="" alt=""></p>
+
+            <div id="dados">
+                <p id="name"></p>
+                <p id="id"></p>
+                <P id="type"></P>
+            </div>
+            
+            
+        </div>
+        
+        
+    </main>
+    <footer>
+        
+        <div id="rodape">
+            <h3>By Igor Mariano</h3>
+            <div class="img">
+                <img src="img/html.svg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/css.svg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/js.svg" alt="">
+            </div>
+        </div>
+        
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

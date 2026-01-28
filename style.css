@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    background: linear-gradient(orange, yellow);
+    background-attachment: fixed;
+    
+}
+
+header{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 10px;
+
+    legend{
+        font-family: "Bungee", sans-serif;
+        font-weight: 200;
+        margin: 10px;
+    }
+    fieldset{
+        border: none;
+    }
+
+    input{
+        padding: 10px;
+        border-radius: 15px;
+        font-weight: bolder;
+        border: none;
+    }
+
+    button{
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+       
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    #pokemon{
+        display: none;
+        text-align: center;
+        min-width: 250px;
+        min-height: 300px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+
+        #dados{
+            font-family: "Bitcount Single", system-ui;
+            font-weight: 600;
+            text-align: left;
+            padding:  10px 10px; 
+        }
+
+        img{
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+
+
+}
+
+#rodape{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: 20px;
+
+    
+    h3{
+        font-family:  "Pacifico", cursive;
+        grid-column: 1/4;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .img{
+    width: 40px;
+    height: auto;
+}
+}
+
+
