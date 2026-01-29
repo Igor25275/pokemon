@@ -17,10 +17,30 @@ body {
 }
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     text-align: center;
     margin-bottom: 10px;
+}
+
+#pokebola{
+    max-width: 100px;
+    max-height: 100px;
+    animation: spin 3s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 section {
@@ -46,8 +66,16 @@ section {
     button{
         padding: 10px;
         border-radius: 15px;
-        border: none;
+        border: 1px solid black;
+        background: linear-gradient(rgb(231, 21, 21), white);
        
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(white, rgb(231, 21, 21));
+            transform: scale(1.05);
+            transition: 0.2s ease-in-out;
+            
+        }
     }
 }
 
